@@ -1,0 +1,15 @@
+gcc
+-Wall -Werror -Wpedantic -g -pg
+generic_gcc
+clang
+-Wall
+generic_clang
+gcc
+-Wall -Werror -Wpedantic -pg -std=c90
+c90_gcc
+gcc
+-Wall -Werror -Wpedantic -pg -std=c11
+c11_gcc
+gcc
+-Wall -Werror -Wpedantic -pg -std=c17
+c17_gcc
