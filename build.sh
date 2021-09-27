@@ -19,8 +19,8 @@ do
     compiler=${builds[$j]}
     flags=${builds[(j+1)]}
     output=${builds[(j+2)]}
-    #line="$compiler $flags $file -o build/$output 2> errors/$output"
-    line="$compiler $flags $file -o build/$output"
+    line="$compiler $flags $file -o build/$output 2> errors/$output"
+    #line="$compiler $flags $file -o build/$output"
     eval $line
     if [ $? -eq 0 ] 
     then 

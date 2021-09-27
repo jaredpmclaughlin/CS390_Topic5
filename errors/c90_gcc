@@ -1,0 +1,27 @@
+Topic5McLaughlin.c:5:1: error: C++ style comments are not allowed in ISO C90
+    5 | // error codes for centralized error handling
+      | ^
+Topic5McLaughlin.c:5:1: note: (this will be reported only once per input file)
+Topic5McLaughlin.c:48:2: error: redefinition of typedef ‘node_t’ [-Werror=pedantic]
+   48 | }node_t;
+      |  ^~~~~~
+Topic5McLaughlin.c:30:28: note: previous declaration of ‘node_t’ was here
+   30 | typedef struct node_struct node_t; // forward declaration to sort out index_record_t refferences
+      |                            ^~~~~~
+Topic5McLaughlin.c: In function ‘main’:
+Topic5McLaughlin.c:73:5: error: ISO C90 forbids variable length array ‘hash’ [-Werror=vla]
+   73 |     index_record_t hash[hashes];
+      |     ^~~~~~~~~~~~~~
+Topic5McLaughlin.c:77:5: error: ISO C90 forbids variable length array ‘buf’ [-Werror=vla]
+   77 |     char buf[bufsz]; // not super happy about this fixed buffer
+      |     ^~~~
+Topic5McLaughlin.c: In function ‘hashd_init’:
+Topic5McLaughlin.c:179:2: error: ‘for’ loop initial declarations are only allowed in C99 or C11 mode
+  179 |  for ( int i = 0; i<size; i++){
+      |  ^~~
+Topic5McLaughlin.c:179:2: note: use option ‘-std=c99’, ‘-std=gnu99’, ‘-std=c11’ or ‘-std=gnu11’ to compile your code
+Topic5McLaughlin.c: In function ‘hashd_print’:
+Topic5McLaughlin.c:240:5: error: ‘for’ loop initial declarations are only allowed in C99 or C11 mode
+  240 |     for ( int i = 0; i < indexsz; i++){
+      |     ^~~
+cc1: all warnings being treated as errors

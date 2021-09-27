@@ -1,0 +1,7 @@
+Topic5McLaughlin.c:48:2: error: redefinition of typedef ‘node_t’ [-Werror=pedantic]
+   48 | }node_t;
+      |  ^~~~~~
+Topic5McLaughlin.c:30:28: note: previous declaration of ‘node_t’ was here
+   30 | typedef struct node_struct node_t; // forward declaration to sort out index_record_t refferences
+      |                            ^~~~~~
+cc1: all warnings being treated as errors

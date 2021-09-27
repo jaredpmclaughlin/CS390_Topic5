@@ -1,4 +1,4 @@
-Topic5McLaughlin.c:13:1: error: C++ style comments are not allowed in ISO C90
-   13 | //error related forward declarations
+Topic5McLaughlin.c:14:1: error: C++ style comments are not allowed in ISO C90
+   14 | //error related forward declarations
       | ^
-Topic5McLaughlin.c:13:1: note: (this will be reported only once per input file)
+Topic5McLaughlin.c:14:1: note: (this will be reported only once per input file)

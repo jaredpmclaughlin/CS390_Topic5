@@ -13,3 +13,6 @@ c11_gcc
 gcc
 -Wall -Werror -Wpedantic -pg -std=c17
 c17_gcc
+gcc
+-Wall -Werror -Wpedantic -pg -std=c99
+c99_gcc
